@@ -31,8 +31,10 @@ function simpleTextAnalyzer(text){
     numCharacters = filtredText.trim().length
 
     temp = text.split(" ")
-    var wordsCharacter = XwNc(temp)
+    temp = temp.filter(i => i !== "") 
     numWords = temp.length
+    var wordsCharacter = XwNc(temp)
+
     temp = text.split(".")
     numSentences = temp.length
 
